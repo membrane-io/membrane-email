@@ -1,16 +1,11 @@
 import { root, nodes, state } from "membrane";
-const { sys_user } = nodes;
+const { sys_email } = nodes;
 
 export const Root = {
   configure: async ({ args }) =>
-    await sys_user.configureEmail({ ...args }).$invoke(),
+    await sys_email.configure({ ...args }).$invoke(),
 
-  handleEmail: async ({ args: { message } }) => {
-    await root.received.$emit({ message });
-  },
-
-  send: async ({ self, args }) => {
-    await sys_user.email.tell({ ...args }).$invoke();
+  send: async ({ args }) => {
+    await sys_email.send({ ...args }).$invoke();
   },
 };
-
