@@ -9,24 +9,18 @@
         "description": "Send yourself emails",
         "actions": [
           {
-            "name": "configure",
-            "description": "Configure your email address to receive messages. This action must be invoked before sending emails.",
-            "type": "Void",
-            "params": [
-              {
-                "name": "email",
-                "type": "String"
-              }
-            ],
-            "hints": {}
-          },
-          {
             "name": "send",
             "description": "Sends an email to the configured address",
             "type": "Void",
             "params": [
-              { "name": "subject", "type": "String" },
-              { "name": "body", "type": "String" }
+              {
+                "name": "subject",
+                "type": "String"
+              },
+              {
+                "name": "body",
+                "type": "String"
+              }
             ],
             "hints": {}
           }

@@ -15,20 +15,6 @@
             "description": "",
             "actions": [
               {
-                "name": "configure",
-                "description": "",
-                "type": "Void",
-                "params": [
-                  {
-                    "name": "email",
-                    "description": "",
-                    "type": "String",
-                    "optional": false
-                  }
-                ],
-                "hints": {}
-              },
-              {
                 "name": "send",
                 "description": "",
                 "type": "Void",
