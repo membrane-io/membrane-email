@@ -10,7 +10,7 @@
         "actions": [
           {
             "name": "send",
-            "description": "Sends an email to the configured address",
+            "description": "Sends an email to the configured address (i.e. the email you signed up with).",
             "type": "Void",
             "params": [
               {
